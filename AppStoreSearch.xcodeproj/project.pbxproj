@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE92B07C2C932681002C51F2 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B07B2C932681002C51F2 /* UIViewController+.swift */; };
 		AEEAAEBE2C92936000C926FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEAAEBD2C92936000C926FC /* AppDelegate.swift */; };
 		AEEAAEC02C92936000C926FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEAAEBF2C92936000C926FC /* SceneDelegate.swift */; };
 		AEEAAEC22C92936000C926FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEAAEC12C92936000C926FC /* ViewController.swift */; };
@@ -175,6 +176,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AE92B07B2C932681002C51F2 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		AEEAAEBA2C92936000C926FC /* AppStoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEEAAEBD2C92936000C926FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEEAAEBF2C92936000C926FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -326,6 +328,7 @@
 				AEEAAEBD2C92936000C926FC /* AppDelegate.swift */,
 				AEEAAEBF2C92936000C926FC /* SceneDelegate.swift */,
 				AEEAAEC12C92936000C926FC /* ViewController.swift */,
+				AE92B07B2C932681002C51F2 /* UIViewController+.swift */,
 				AEEAAEC32C92936000C926FC /* Main.storyboard */,
 				AEEAAEC62C92936100C926FC /* Assets.xcassets */,
 				AEEAAEC82C92936100C926FC /* LaunchScreen.storyboard */,
@@ -747,6 +750,7 @@
 			files = (
 				AEEAAEC22C92936000C926FC /* ViewController.swift in Sources */,
 				AEEAAEBE2C92936000C926FC /* AppDelegate.swift in Sources */,
+				AE92B07C2C932681002C51F2 /* UIViewController+.swift in Sources */,
 				AEEAAEC02C92936000C926FC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
