@@ -19,6 +19,8 @@ public class SearchViewController: UIViewController {
     
     private var dataSource: SearchDataSource?
     
+    private let loadingView = UIActivityIndicatorView(style: .medium)
+    
     public init(viewModel: SearchViewModel) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
@@ -46,6 +48,7 @@ private extension SearchViewController {
     func setupView() {
         view.backgroundColor = .systemBackground
         
+        // collection view
         let listConfig = UICollectionLayoutListConfiguration(appearance: .plain)
         let layout = UICollectionViewCompositionalLayout.list(using: listConfig)
         
@@ -56,6 +59,11 @@ private extension SearchViewController {
         collectionView.backgroundColor = .systemBackground
         
         setupDataSource(collectionView: collectionView)
+        
+        // loading view
+        loadingView.hidesWhenStopped = true
+        view.addSubview(loadingView)
+        loadingView.centerToSuperview()
     }
     
     func setupSearchController() {
@@ -78,6 +86,17 @@ private extension SearchViewController {
             .receive(on: DispatchQueue.main)
             .sink { [weak self] items in
                 self?.updateUI(recents: [], apps: items)
+            }
+            .store(in: &subscriptions)
+        
+        viewModel.isLoading
+            .receive(on: DispatchQueue.main)
+            .sink { [weak self] loading in
+                if loading {
+                    self?.loadingView.startAnimating()
+                } else {
+                    self?.loadingView.stopAnimating()
+                }
             }
             .store(in: &subscriptions)
     }
@@ -135,6 +154,10 @@ extension SearchViewController: UISearchBarDelegate {
     
     public func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         viewModel.search(term: searchBar.text ?? "")
+    }
+    
+    public func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        
     }
 }
 

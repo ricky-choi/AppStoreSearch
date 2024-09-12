@@ -16,6 +16,8 @@ public protocol SearchViewModelInput {
 public protocol SearchViewModelOutput {
     var apps: AnyPublisher<[AppUIModel], Never> { get }
     var recents: AnyPublisher<[RecentUIModel], Never> { get }
+    
+    var isLoading: AnyPublisher<Bool, Never> { get }
 }
 
 public protocol SearchViewModel: SearchViewModelInput, SearchViewModelOutput {}

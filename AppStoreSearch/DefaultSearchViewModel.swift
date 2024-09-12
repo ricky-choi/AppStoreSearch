@@ -18,6 +18,7 @@ class DefaultSearchViewModel: SearchViewModel {
     
     private let appsSubject: CurrentValueSubject<[AppUIModel], Never> = .init([])
     private let recentsSubject: CurrentValueSubject<[RecentUIModel], Never> = .init([])
+    private let isLoadingSubject: CurrentValueSubject<Bool, Never> = .init(false)
     
     // MARK: - Input
     
@@ -26,11 +27,16 @@ class DefaultSearchViewModel: SearchViewModel {
         
         Task {
             do {
+                isLoadingSubject.send(true)
+                
                 let results = try await appStoreService.search(term: term)
                 let appUIModels = results.map { $0.uiModel }
                 appsSubject.send(appUIModels)
+                
+                isLoadingSubject.send(false)
             } catch {
                 print("Error ->", error)
+                isLoadingSubject.send(false)
             }
         }
     }
@@ -48,6 +54,10 @@ class DefaultSearchViewModel: SearchViewModel {
     
     var recents: AnyPublisher<[RecentUIModel], Never> {
         recentsSubject.eraseToAnyPublisher()
+    }
+    
+    var isLoading: AnyPublisher<Bool, Never> {
+        isLoadingSubject.eraseToAnyPublisher()
     }
 }
 

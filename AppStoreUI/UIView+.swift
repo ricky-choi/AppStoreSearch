@@ -20,6 +20,15 @@ extension UIView {
         bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: -directionalInsets.bottom).isActive = true
     }
     
+    func centerToSuperview() {
+        guard let superview = superview else { return }
+        
+        translatesAutoresizingMaskIntoConstraints = false
+        
+        centerXAnchor.constraint(equalTo: superview.centerXAnchor).isActive = true
+        centerYAnchor.constraint(equalTo: superview.centerYAnchor).isActive = true
+    }
+    
     func round() {
         layer.cornerRadius = 10
         layer.borderWidth = 0.5
