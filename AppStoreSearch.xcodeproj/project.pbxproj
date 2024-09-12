@@ -13,6 +13,18 @@
 		AE92B0922C932ACE002C51F2 /* AppStoreUI.h in Headers */ = {isa = PBXBuildFile; fileRef = AE92B0842C932ACD002C51F2 /* AppStoreUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE92B0952C932ACE002C51F2 /* AppStoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE92B0822C932ACD002C51F2 /* AppStoreUI.framework */; };
 		AE92B0962C932ACE002C51F2 /* AppStoreUI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AE92B0822C932ACD002C51F2 /* AppStoreUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AE92B0BE2C938B33002C51F2 /* DefaultSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B0BD2C938B33002C51F2 /* DefaultSearchViewModel.swift */; };
+		AE92B0C12C938B51002C51F2 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = AE92B0C02C938B51002C51F2 /* Kingfisher */; };
+		AE92B0CE2C938BBD002C51F2 /* AppCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B0C22C938BBD002C51F2 /* AppCollectionViewCell.swift */; };
+		AE92B0CF2C938BBD002C51F2 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B0C32C938BBD002C51F2 /* SearchViewController.swift */; };
+		AE92B0D02C938BBD002C51F2 /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B0C42C938BBD002C51F2 /* SearchViewModel.swift */; };
+		AE92B0D12C938BBD002C51F2 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B0C52C938BBD002C51F2 /* StarRatingView.swift */; };
+		AE92B0D22C938BBD002C51F2 /* UIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B0C72C938BBD002C51F2 /* UIModel.swift */; };
+		AE92B0D32C938BBD002C51F2 /* AppDescriptionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B0C82C938BBD002C51F2 /* AppDescriptionCollectionViewCell.swift */; };
+		AE92B0D42C938BBD002C51F2 /* AppDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B0C92C938BBD002C51F2 /* AppDetailViewController.swift */; };
+		AE92B0D52C938BBD002C51F2 /* AppHeaderCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B0CA2C938BBD002C51F2 /* AppHeaderCollectionViewCell.swift */; };
+		AE92B0D62C938BBD002C51F2 /* AppScreenshotCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B0CB2C938BBD002C51F2 /* AppScreenshotCollectionViewCell.swift */; };
+		AE92B0D72C938BBD002C51F2 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B0CD2C938BBD002C51F2 /* UIView+.swift */; };
 		AEEAAEBE2C92936000C926FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEAAEBD2C92936000C926FC /* AppDelegate.swift */; };
 		AEEAAEC02C92936000C926FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEAAEBF2C92936000C926FC /* SceneDelegate.swift */; };
 		AEEAAEC22C92936000C926FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEAAEC12C92936000C926FC /* ViewController.swift */; };
@@ -208,6 +220,17 @@
 		AE92B0842C932ACD002C51F2 /* AppStoreUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppStoreUI.h; sourceTree = "<group>"; };
 		AE92B0892C932ACE002C51F2 /* AppStoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppStoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE92B0902C932ACE002C51F2 /* AppStoreUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreUITests.swift; sourceTree = "<group>"; };
+		AE92B0BD2C938B33002C51F2 /* DefaultSearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultSearchViewModel.swift; sourceTree = "<group>"; };
+		AE92B0C22C938BBD002C51F2 /* AppCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE92B0C32C938BBD002C51F2 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		AE92B0C42C938BBD002C51F2 /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		AE92B0C52C938BBD002C51F2 /* StarRatingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
+		AE92B0C72C938BBD002C51F2 /* UIModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIModel.swift; sourceTree = "<group>"; };
+		AE92B0C82C938BBD002C51F2 /* AppDescriptionCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDescriptionCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE92B0C92C938BBD002C51F2 /* AppDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDetailViewController.swift; sourceTree = "<group>"; };
+		AE92B0CA2C938BBD002C51F2 /* AppHeaderCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppHeaderCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE92B0CB2C938BBD002C51F2 /* AppScreenshotCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppScreenshotCollectionViewCell.swift; sourceTree = "<group>"; };
+		AE92B0CD2C938BBD002C51F2 /* UIView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		AEEAAEBA2C92936000C926FC /* AppStoreSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStoreSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEEAAEBD2C92936000C926FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEEAAEBF2C92936000C926FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -250,6 +273,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE92B0C12C938B51002C51F2 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +363,10 @@
 		AE92B0832C932ACD002C51F2 /* AppStoreUI */ = {
 			isa = PBXGroup;
 			children = (
+				AE92B0CC2C938BBD002C51F2 /* AppDetail */,
+				AE92B0C62C938BBD002C51F2 /* Search */,
+				AE92B0C72C938BBD002C51F2 /* UIModel.swift */,
+				AE92B0CD2C938BBD002C51F2 /* UIView+.swift */,
 				AE92B0842C932ACD002C51F2 /* AppStoreUI.h */,
 			);
 			path = AppStoreUI;
@@ -350,6 +378,28 @@
 				AE92B0902C932ACE002C51F2 /* AppStoreUITests.swift */,
 			);
 			path = AppStoreUITests;
+			sourceTree = "<group>";
+		};
+		AE92B0C62C938BBD002C51F2 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				AE92B0C22C938BBD002C51F2 /* AppCollectionViewCell.swift */,
+				AE92B0C32C938BBD002C51F2 /* SearchViewController.swift */,
+				AE92B0C42C938BBD002C51F2 /* SearchViewModel.swift */,
+				AE92B0C52C938BBD002C51F2 /* StarRatingView.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		AE92B0CC2C938BBD002C51F2 /* AppDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AE92B0C82C938BBD002C51F2 /* AppDescriptionCollectionViewCell.swift */,
+				AE92B0C92C938BBD002C51F2 /* AppDetailViewController.swift */,
+				AE92B0CA2C938BBD002C51F2 /* AppHeaderCollectionViewCell.swift */,
+				AE92B0CB2C938BBD002C51F2 /* AppScreenshotCollectionViewCell.swift */,
+			);
+			path = AppDetail;
 			sourceTree = "<group>";
 		};
 		AEEAAEB12C92936000C926FC = {
@@ -395,6 +445,7 @@
 				AEEAAEBD2C92936000C926FC /* AppDelegate.swift */,
 				AEEAAEBF2C92936000C926FC /* SceneDelegate.swift */,
 				AEEAAEC12C92936000C926FC /* ViewController.swift */,
+				AE92B0BD2C938B33002C51F2 /* DefaultSearchViewModel.swift */,
 				AE92B07B2C932681002C51F2 /* UIViewController+.swift */,
 				AEEAAEC32C92936000C926FC /* Main.storyboard */,
 				AEEAAEC62C92936100C926FC /* Assets.xcassets */,
@@ -530,6 +581,9 @@
 			dependencies = (
 			);
 			name = AppStoreUI;
+			packageProductDependencies = (
+				AE92B0C02C938B51002C51F2 /* Kingfisher */,
+			);
 			productName = AppStoreUI;
 			productReference = AE92B0822C932ACD002C51F2 /* AppStoreUI.framework */;
 			productType = "com.apple.product-type.framework";
@@ -740,6 +794,7 @@
 				TargetAttributes = {
 					AE92B0812C932ACD002C51F2 = {
 						CreatedOnToolsVersion = 15.4;
+						LastSwiftMigration = 1540;
 					};
 					AE92B0882C932ACE002C51F2 = {
 						CreatedOnToolsVersion = 15.4;
@@ -790,6 +845,7 @@
 			mainGroup = AEEAAEB12C92936000C926FC;
 			packageReferences = (
 				AEEAB0262C92B9FC00C926FC /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+				AE92B0BF2C938B51002C51F2 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = AEEAAEBB2C92936000C926FC /* Products */;
 			projectDirPath = "";
@@ -884,6 +940,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE92B0D02C938BBD002C51F2 /* SearchViewModel.swift in Sources */,
+				AE92B0D22C938BBD002C51F2 /* UIModel.swift in Sources */,
+				AE92B0D12C938BBD002C51F2 /* StarRatingView.swift in Sources */,
+				AE92B0CF2C938BBD002C51F2 /* SearchViewController.swift in Sources */,
+				AE92B0D72C938BBD002C51F2 /* UIView+.swift in Sources */,
+				AE92B0D42C938BBD002C51F2 /* AppDetailViewController.swift in Sources */,
+				AE92B0D62C938BBD002C51F2 /* AppScreenshotCollectionViewCell.swift in Sources */,
+				AE92B0CE2C938BBD002C51F2 /* AppCollectionViewCell.swift in Sources */,
+				AE92B0D32C938BBD002C51F2 /* AppDescriptionCollectionViewCell.swift in Sources */,
+				AE92B0D52C938BBD002C51F2 /* AppHeaderCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -900,6 +966,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEEAAEC22C92936000C926FC /* ViewController.swift in Sources */,
+				AE92B0BE2C938B33002C51F2 /* DefaultSearchViewModel.swift in Sources */,
 				AEEAAEBE2C92936000C926FC /* AppDelegate.swift in Sources */,
 				AE92B07C2C932681002C51F2 /* UIViewController+.swift in Sources */,
 				AEEAAEC02C92936000C926FC /* SceneDelegate.swift in Sources */,
@@ -1073,6 +1140,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1098,6 +1166,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_INSTALL_OBJC_HEADER = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -1109,6 +1178,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -1848,6 +1918,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		AE92B0BF2C938B51002C51F2 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.12.0;
+			};
+		};
 		AEEAB0262C92B9FC00C926FC /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
@@ -1859,6 +1937,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		AE92B0C02C938B51002C51F2 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AE92B0BF2C938B51002C51F2 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		AEEAB0272C92B9FC00C926FC /* ArgumentParser */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = AEEAB0262C92B9FC00C926FC /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
