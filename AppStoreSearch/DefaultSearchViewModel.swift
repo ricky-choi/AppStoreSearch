@@ -53,13 +53,37 @@ class DefaultSearchViewModel: SearchViewModel {
 
 extension AppDTO {
     var uiModel: AppUIModel {
+        
+        func format(number: Int) -> String {
+            if number >= 10_000 {
+                let man = number / 10_000
+                let thousand = (number % 10_000) / 1_000
+                
+                if thousand > 0 {
+                    return "\(man).\(thousand)만"
+                } else {
+                    return "\(man)만"
+                }
+            } else if number >= 1_000 {
+                let thousand = number / 1_000
+                let hundred = (number % 1_000) / 100
+                if hundred > 0 {
+                    return "\(thousand).\(hundred)천"
+                } else {
+                    return "\(thousand)천"
+                }
+            } else {
+                return "\(number)"
+            }
+        }
+        
         return AppUIModel(
             appName: trackName,
             appIconURL: artworkUrl100,
             appDescription: description,
             appScreenshotURLs: screenshotUrls,
             star: averageUserRating,
-            starCount: "\(userRatingCount)"
+            starCount: format(number: userRatingCount)
         )
     }
 }

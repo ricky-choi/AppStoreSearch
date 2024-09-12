@@ -25,6 +25,13 @@ class AppCollectionViewCell: UICollectionViewCell {
     
     let starRatingView = StarRatingView()
     
+    let ratingCountLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 12)
+        label.numberOfLines = 1
+        return label
+    }()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -55,6 +62,11 @@ class AppCollectionViewCell: UICollectionViewCell {
         starRatingView.leadingAnchor.constraint(equalTo: appIconView.trailingAnchor, constant: 10).isActive = true
         starRatingView.bottomAnchor.constraint(equalTo: appIconView.bottomAnchor).isActive = true
         
+        contentView.addSubview(ratingCountLabel)
+        ratingCountLabel.translatesAutoresizingMaskIntoConstraints = false
+        ratingCountLabel.leadingAnchor.constraint(equalTo: starRatingView.trailingAnchor, constant: 10).isActive = true
+        ratingCountLabel.bottomAnchor.constraint(equalTo: appIconView.bottomAnchor).isActive = true
+        
         screenShot0.round()
         screenShot1.round()
         screenShot2.round()
@@ -81,6 +93,8 @@ class AppCollectionViewCell: UICollectionViewCell {
         appNameLabel.text = model.appName
         
         starRatingView.rate = CGFloat(model.star)
+        
+        ratingCountLabel.text = model.starCount
         
         for (index, appScreenshotURL) in model.appScreenshotURLs.enumerated().prefix(3) {
             switch index {
