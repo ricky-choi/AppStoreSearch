@@ -47,18 +47,22 @@ class CoreDataManager {
     }()
     
     func add(term: String, date: Date = .now) {
+        let trimmedTerm = term.trimmingCharacters(in: .whitespacesAndNewlines)
+        
+        guard !trimmedTerm.isEmpty else { return }
+        
         let context = persistentContainer.viewContext
         
         defer {
             try? context.save()
         }
         
-        if let exist = find(term: term) {
+        if let exist = find(term: trimmedTerm) {
             exist.setValue(date, forKey: ResourceName.attr_date)
         } else {
             let entity = NSEntityDescription.entity(forEntityName: ResourceName.entity, in: context)!
             let searchTerm = NSManagedObject(entity: entity, insertInto: context)
-            searchTerm.setValue(term, forKey: ResourceName.attr_term)
+            searchTerm.setValue(trimmedTerm, forKey: ResourceName.attr_term)
             searchTerm.setValue(date, forKey: ResourceName.attr_date)
         }
     }

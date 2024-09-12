@@ -72,5 +72,21 @@ class RecentsServiceTests: XCTestCase {
         XCTAssertEqual(first, "kakao")
         XCTAssertEqual(results.count, 3)
     }
+    
+    func test_add_empty_notavailable() throws {
+        coreDataManager.add(term: "")
+        
+        let results = try coreDataManager.fetchAll()
+        
+        XCTAssertEqual(results.count, 0)
+    }
+    
+    func test_add_empty2_notavailable() throws {
+        coreDataManager.add(term: " ")
+        
+        let results = try coreDataManager.fetchAll()
+        
+        XCTAssertEqual(results.count, 0)
+    }
 
 }
