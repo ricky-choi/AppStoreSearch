@@ -19,4 +19,11 @@ extension UIView {
         topAnchor.constraint(equalTo: superview.topAnchor, constant: directionalInsets.top).isActive = true
         bottomAnchor.constraint(equalTo: superview.bottomAnchor, constant: -directionalInsets.bottom).isActive = true
     }
+    
+    func round() {
+        layer.cornerRadius = 10
+        layer.borderWidth = 0.5
+        layer.borderColor = UIColor.systemGray3.cgColor
+        clipsToBounds = true
+    }
 }

@@ -44,3 +44,15 @@ public enum SearchItem: Hashable {
     case recent(RecentUIModel)
     case app(AppUIModel)
 }
+
+enum AppDetailSection: Hashable {
+    case title
+    case screenshots
+    case desc
+}
+
+enum AppDetailItem: Hashable {
+    case title(AppUIModel)
+    case screenshot(String)
+    case desc(String)
+}

@@ -153,7 +153,8 @@ extension SearchViewController: UICollectionViewDelegate {
             viewModel.search(term: recentUIModel)
         case .app(let appUIModel):
             // show detail
-            break
+            let appDetail = AppDetailViewController(uiModel: appUIModel)
+            navigationController?.pushViewController(appDetail, animated: true)
         }
     }
 }

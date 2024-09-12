@@ -110,12 +110,3 @@ class AppCollectionViewCell: UICollectionViewCell {
         }
     }
 }
-
-extension UIImageView {
-    func round() {
-        layer.cornerRadius = 10
-        layer.borderWidth = 0.5
-        layer.borderColor = UIColor.systemGray3.cgColor
-        clipsToBounds = true
-    }
-}
