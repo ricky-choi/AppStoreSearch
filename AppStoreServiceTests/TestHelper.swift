@@ -43,7 +43,8 @@ extension AppDTO {
             trackId: appId,
             trackName: appName,
             trackViewUrl: "",
-            version: ""
+            version: "",
+            userRatingCount: 0
         )
     }
 }

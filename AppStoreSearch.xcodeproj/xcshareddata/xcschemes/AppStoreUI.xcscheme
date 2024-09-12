@@ -15,9 +15,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "AEEB83DD2C92D58F00EC79CF"
-               BuildableName = "RecentsServiceRun"
-               BlueprintName = "RecentsServiceRun"
+               BlueprintIdentifier = "AE92B0812C932ACD002C51F2"
+               BuildableName = "AppStoreUI.framework"
+               BlueprintName = "AppStoreUI"
                ReferencedContainer = "container:AppStoreSearch.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -39,28 +39,7 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
-      allowLocationSimulation = "YES"
-      viewDebuggingEnabled = "No">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AEEB83DD2C92D58F00EC79CF"
-            BuildableName = "RecentsServiceRun"
-            BlueprintName = "RecentsServiceRun"
-            ReferencedContainer = "container:AppStoreSearch.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
-      <CommandLineArguments>
-         <CommandLineArgument
-            argument = "--add daum"
-            isEnabled = "YES">
-         </CommandLineArgument>
-         <CommandLineArgument
-            argument = "clear"
-            isEnabled = "NO">
-         </CommandLineArgument>
-      </CommandLineArguments>
+      allowLocationSimulation = "YES">
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -68,16 +47,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "AEEB83DD2C92D58F00EC79CF"
-            BuildableName = "RecentsServiceRun"
-            BlueprintName = "RecentsServiceRun"
+            BlueprintIdentifier = "AE92B0812C932ACD002C51F2"
+            BuildableName = "AppStoreUI.framework"
+            BlueprintName = "AppStoreUI"
             ReferencedContainer = "container:AppStoreSearch.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

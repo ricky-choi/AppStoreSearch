@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AppStoreUI
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -33,7 +34,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         vc3.title = "Arcade"
         vc3.tabBarItem = .init(title: "Arcade", image: UIImage(systemName: "gamecontroller.fill"), tag: 1)
         
-        let searchViewController = ViewController()
+        let searchViewModel = DefaultSearchViewModel()
+        let searchViewController = SearchViewController(viewModel: searchViewModel)
         searchViewController.title = "검색"
         searchViewController.tabBarItem = .init(title: "검색", image: UIImage(systemName: "magnifyingglass"), tag: 1)
         

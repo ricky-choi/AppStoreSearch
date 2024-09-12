@@ -17,8 +17,16 @@ public class RecentsService {
     }
     
     public func recentsAll() -> [String] {
-        if let all = try? repository.recentsAll() {
-            return all
+        if let results = try? repository.recentsAll() {
+            return results
+        } else {
+            return []
+        }
+    }
+    
+    public func recents(term: String) -> [String] {
+        if let results = try? repository.recents(term: term) {
+            return results
         } else {
             return []
         }

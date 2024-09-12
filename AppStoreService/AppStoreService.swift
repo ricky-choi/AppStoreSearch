@@ -9,9 +9,11 @@ import Foundation
 
 public class AppStore {
     
-    static public func search(term: String) async throws -> [AppDTO] {
-        
-        let repository = DefaultAppStoreRepository()
+    let repository = DefaultAppStoreRepository()
+    
+    public init() {}
+    
+    public func search(term: String) async throws -> [AppDTO] {        
         let result = try await repository.search(term: term)
         return result.results
     }

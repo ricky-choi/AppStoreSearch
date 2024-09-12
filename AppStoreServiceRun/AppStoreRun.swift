@@ -16,7 +16,7 @@ struct AppStoreRun: AsyncParsableCommand {
     var term: String
     
     func run() async throws {
-        let results = try await AppStore.search(term: term)
+        let results = try await AppStore().search(term: term)
         print(results)
     }
 }
