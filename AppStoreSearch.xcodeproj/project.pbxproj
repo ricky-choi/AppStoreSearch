@@ -26,6 +26,10 @@
 		AEEAB0102C92B1E800C926FC /* TestHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEAB00F2C92B1E800C926FC /* TestHelper.swift */; };
 		AEEAB0122C92B22300C926FC /* DefaultAppStoreRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEAB0112C92B22300C926FC /* DefaultAppStoreRepository.swift */; };
 		AEEAB0142C92B59F00C926FC /* AppStoreService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEAB0132C92B59F00C926FC /* AppStoreService.swift */; };
+		AEEAB0212C92B7D200C926FC /* AppStoreService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEEAAFEF2C92A5A100C926FC /* AppStoreService.framework */; };
+		AEEAB0222C92B7D200C926FC /* AppStoreService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEEAAFEF2C92A5A100C926FC /* AppStoreService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AEEAB0282C92B9FC00C926FC /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = AEEAB0272C92B9FC00C926FC /* ArgumentParser */; };
+		AEEAB02C2C92BE7800C926FC /* AppStoreRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEAB02B2C92BE7800C926FC /* AppStoreRun.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +68,13 @@
 			remoteGlobalIDString = AEEAAFEE2C92A5A100C926FC;
 			remoteInfo = AppStoreService;
 		};
+		AEEAB0232C92B7D200C926FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEEAAEB22C92936000C926FC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AEEAAFEE2C92A5A100C926FC;
+			remoteInfo = AppStoreService;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -74,6 +85,26 @@
 			dstSubfolderSpec = 10;
 			files = (
 				AEEAB0032C92A5A100C926FC /* AppStoreService.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AEEAB0172C92B7CB00C926FC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		AEEAB0252C92B7D200C926FC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AEEAB0222C92B7D200C926FC /* AppStoreService.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -103,6 +134,8 @@
 		AEEAB00F2C92B1E800C926FC /* TestHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHelper.swift; sourceTree = "<group>"; };
 		AEEAB0112C92B22300C926FC /* DefaultAppStoreRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultAppStoreRepository.swift; sourceTree = "<group>"; };
 		AEEAB0132C92B59F00C926FC /* AppStoreService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreService.swift; sourceTree = "<group>"; };
+		AEEAB0192C92B7CB00C926FC /* AppStoreServiceRun */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AppStoreServiceRun; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEEAB02B2C92BE7800C926FC /* AppStoreRun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreRun.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +176,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AEEAB0162C92B7CB00C926FC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEEAB0282C92B9FC00C926FC /* ArgumentParser in Frameworks */,
+				AEEAB0212C92B7D200C926FC /* AppStoreService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -154,7 +196,9 @@
 				AEEAAEDD2C92936100C926FC /* AppStoreSearchUITests */,
 				AEEAAFF02C92A5A100C926FC /* AppStoreService */,
 				AEEAAFFC2C92A5A100C926FC /* AppStoreServiceTests */,
+				AEEAB01A2C92B7CB00C926FC /* AppStoreServiceRun */,
 				AEEAAEBB2C92936000C926FC /* Products */,
+				AEEAB0202C92B7D200C926FC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,6 +210,7 @@
 				AEEAAEDA2C92936100C926FC /* AppStoreSearchUITests.xctest */,
 				AEEAAFEF2C92A5A100C926FC /* AppStoreService.framework */,
 				AEEAAFF62C92A5A100C926FC /* AppStoreServiceTests.xctest */,
+				AEEAB0192C92B7CB00C926FC /* AppStoreServiceRun */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -220,6 +265,21 @@
 				AEEAB00F2C92B1E800C926FC /* TestHelper.swift */,
 			);
 			path = AppStoreServiceTests;
+			sourceTree = "<group>";
+		};
+		AEEAB01A2C92B7CB00C926FC /* AppStoreServiceRun */ = {
+			isa = PBXGroup;
+			children = (
+				AEEAB02B2C92BE7800C926FC /* AppStoreRun.swift */,
+			);
+			path = AppStoreServiceRun;
+			sourceTree = "<group>";
+		};
+		AEEAB0202C92B7D200C926FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +388,28 @@
 			productReference = AEEAAFF62C92A5A100C926FC /* AppStoreServiceTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		AEEAB0182C92B7CB00C926FC /* AppStoreServiceRun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEEAB01D2C92B7CB00C926FC /* Build configuration list for PBXNativeTarget "AppStoreServiceRun" */;
+			buildPhases = (
+				AEEAB0152C92B7CB00C926FC /* Sources */,
+				AEEAB0162C92B7CB00C926FC /* Frameworks */,
+				AEEAB0172C92B7CB00C926FC /* CopyFiles */,
+				AEEAB0252C92B7D200C926FC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AEEAB0242C92B7D200C926FC /* PBXTargetDependency */,
+			);
+			name = AppStoreServiceRun;
+			packageProductDependencies = (
+				AEEAB0272C92B9FC00C926FC /* ArgumentParser */,
+			);
+			productName = AppStoreServiceRun;
+			productReference = AEEAB0192C92B7CB00C926FC /* AppStoreServiceRun */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -356,6 +438,9 @@
 					AEEAAFF52C92A5A100C926FC = {
 						CreatedOnToolsVersion = 15.4;
 					};
+					AEEAB0182C92B7CB00C926FC = {
+						CreatedOnToolsVersion = 15.4;
+					};
 				};
 			};
 			buildConfigurationList = AEEAAEB52C92936000C926FC /* Build configuration list for PBXProject "AppStoreSearch" */;
@@ -367,6 +452,9 @@
 				Base,
 			);
 			mainGroup = AEEAAEB12C92936000C926FC;
+			packageReferences = (
+				AEEAB0262C92B9FC00C926FC /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			productRefGroup = AEEAAEBB2C92936000C926FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -376,6 +464,7 @@
 				AEEAAED92C92936100C926FC /* AppStoreSearchUITests */,
 				AEEAAFEE2C92A5A100C926FC /* AppStoreService */,
 				AEEAAFF52C92A5A100C926FC /* AppStoreServiceTests */,
+				AEEAB0182C92B7CB00C926FC /* AppStoreServiceRun */,
 			);
 		};
 /* End PBXProject section */
@@ -469,6 +558,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AEEAB0152C92B7CB00C926FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEEAB02C2C92BE7800C926FC /* AppStoreRun.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -496,6 +593,11 @@
 			isa = PBXTargetDependency;
 			target = AEEAAFEE2C92A5A100C926FC /* AppStoreService */;
 			targetProxy = AEEAB0002C92A5A100C926FC /* PBXContainerItemProxy */;
+		};
+		AEEAB0242C92B7D200C926FC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AEEAAFEE2C92A5A100C926FC /* AppStoreService */;
+			targetProxy = AEEAB0232C92B7D200C926FC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -899,6 +1001,28 @@
 			};
 			name = Release;
 		};
+		AEEAB01E2C92B7CB00C926FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		AEEAB01F2C92B7CB00C926FC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -956,7 +1080,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		AEEAB01D2C92B7CB00C926FC /* Build configuration list for PBXNativeTarget "AppStoreServiceRun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEEAB01E2C92B7CB00C926FC /* Debug */,
+				AEEAB01F2C92B7CB00C926FC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AEEAB0262C92B9FC00C926FC /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AEEAB0272C92B9FC00C926FC /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AEEAB0262C92B9FC00C926FC /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AEEAAEB22C92936000C926FC /* Project object */;
 }
