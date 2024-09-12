@@ -23,6 +23,8 @@ class AppCollectionViewCell: UICollectionViewCell {
     let screenShot1 = UIImageView()
     let screenShot2 = UIImageView()
     
+    let starRatingView = StarRatingView()
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -48,6 +50,11 @@ class AppCollectionViewCell: UICollectionViewCell {
         appNameLabel.leadingAnchor.constraint(equalTo: appIconView.trailingAnchor, constant: 10).isActive = true
         appNameLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -10).isActive = true
         
+        contentView.addSubview(starRatingView)
+        starRatingView.translatesAutoresizingMaskIntoConstraints = false
+        starRatingView.leadingAnchor.constraint(equalTo: appIconView.trailingAnchor, constant: 10).isActive = true
+        starRatingView.bottomAnchor.constraint(equalTo: appIconView.bottomAnchor).isActive = true
+        
         screenShot0.round()
         screenShot1.round()
         screenShot2.round()
@@ -72,6 +79,8 @@ class AppCollectionViewCell: UICollectionViewCell {
         appIconView.kf.setImage(with: iconURL)
         
         appNameLabel.text = model.appName
+        
+        starRatingView.rate = CGFloat(model.star)
         
         for (index, appScreenshotURL) in model.appScreenshotURLs.enumerated().prefix(3) {
             switch index {
