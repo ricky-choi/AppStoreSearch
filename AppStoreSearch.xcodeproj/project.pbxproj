@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE0F2D402FCEA6CF008B5054 /* Recents.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AE0F2D3E2FCEA6CF008B5054 /* Recents.xcdatamodeld */; };
 		AE92B07C2C932681002C51F2 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B07B2C932681002C51F2 /* UIViewController+.swift */; };
 		AE92B08A2C932ACE002C51F2 /* AppStoreUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE92B0822C932ACD002C51F2 /* AppStoreUI.framework */; };
 		AE92B0912C932ACE002C51F2 /* AppStoreUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE92B0902C932ACE002C51F2 /* AppStoreUITests.swift */; };
@@ -55,7 +56,6 @@
 		AEEAB0462C92C10900C926FC /* RecentsService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AEEAB0322C92C10900C926FC /* RecentsService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		AEEAB04E2C92C1A900C926FC /* RecentsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEAB04D2C92C1A900C926FC /* RecentsRepository.swift */; };
 		AEEAB0502C92C23C00C926FC /* DefaultRecentsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEAB04F2C92C23C00C926FC /* DefaultRecentsRepository.swift */; };
-		AEEAB0532C92C2D200C926FC /* Recents.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEEAB0512C92C2D200C926FC /* Recents.xcdatamodeld */; };
 		AEEB83D92C92D17200EC79CF /* RecentsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB83D82C92D17200EC79CF /* RecentsService.swift */; };
 		AEEB83E62C92D5A100EC79CF /* RecentsRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEB83E52C92D5A100EC79CF /* RecentsRun.swift */; };
 		AEEB83E82C92D5C200EC79CF /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = AEEB83E72C92D5C200EC79CF /* ArgumentParser */; };
@@ -215,6 +215,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		AE0F2D3F2FCEA6CF008B5054 /* Recents.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Recents.xcdatamodel; sourceTree = "<group>"; };
 		AE92B07B2C932681002C51F2 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		AE92B0822C932ACD002C51F2 /* AppStoreUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AppStoreUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE92B0842C932ACD002C51F2 /* AppStoreUI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppStoreUI.h; sourceTree = "<group>"; };
@@ -261,7 +262,6 @@
 		AEEAB0402C92C10900C926FC /* RecentsServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsServiceTests.swift; sourceTree = "<group>"; };
 		AEEAB04D2C92C1A900C926FC /* RecentsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsRepository.swift; sourceTree = "<group>"; };
 		AEEAB04F2C92C23C00C926FC /* DefaultRecentsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRecentsRepository.swift; sourceTree = "<group>"; };
-		AEEAB0522C92C2D200C926FC /* Recents.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Recents.xcdatamodel; sourceTree = "<group>"; };
 		AEEB83D82C92D17200EC79CF /* RecentsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsService.swift; sourceTree = "<group>"; };
 		AEEB83DE2C92D58F00EC79CF /* RecentsServiceRun */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = RecentsServiceRun; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEEB83E52C92D5A100EC79CF /* RecentsRun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentsRun.swift; sourceTree = "<group>"; };
@@ -516,7 +516,7 @@
 				AEEAB04D2C92C1A900C926FC /* RecentsRepository.swift */,
 				AEEAB04F2C92C23C00C926FC /* DefaultRecentsRepository.swift */,
 				AEEB83EE2C92E22700EC79CF /* CoreDataManager.swift */,
-				AEEAB0512C92C2D200C926FC /* Recents.xcdatamodeld */,
+				AE0F2D3E2FCEA6CF008B5054 /* Recents.xcdatamodeld */,
 			);
 			path = RecentsService;
 			sourceTree = "<group>";
@@ -1024,9 +1024,9 @@
 			files = (
 				AEEB83D92C92D17200EC79CF /* RecentsService.swift in Sources */,
 				AEEAB0502C92C23C00C926FC /* DefaultRecentsRepository.swift in Sources */,
+				AE0F2D402FCEA6CF008B5054 /* Recents.xcdatamodeld in Sources */,
 				AEEAB04E2C92C1A900C926FC /* RecentsRepository.swift in Sources */,
 				AEEB83EF2C92E22700EC79CF /* CoreDataManager.swift in Sources */,
-				AEEAB0532C92C2D200C926FC /* Recents.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1955,14 +1955,13 @@
 /* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
-		AEEAB0512C92C2D200C926FC /* Recents.xcdatamodeld */ = {
+		AE0F2D3E2FCEA6CF008B5054 /* Recents.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				AEEAB0522C92C2D200C926FC /* Recents.xcdatamodel */,
+				AE0F2D3F2FCEA6CF008B5054 /* Recents.xcdatamodel */,
 			);
-			currentVersion = AEEAB0522C92C2D200C926FC /* Recents.xcdatamodel */;
-			name = Recents.xcdatamodeld;
-			path = /Users/jaeyoung/Developer/AppStoreSearch/RecentsService/Recents.xcdatamodeld;
+			currentVersion = AE0F2D3F2FCEA6CF008B5054 /* Recents.xcdatamodel */;
+			path = Recents.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
